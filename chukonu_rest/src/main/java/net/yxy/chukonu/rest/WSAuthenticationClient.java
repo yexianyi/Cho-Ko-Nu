@@ -61,7 +61,12 @@ public class WSAuthenticationClient {
 					           
 					            authCache.put(targetHost, digestAuth);
 					            break ;
-				case "NTLM":	
+				case "NTLM":
+				//missing default case
+        			default:
+            			    // add default case
+            				break;
+
 			}
 			
 	
