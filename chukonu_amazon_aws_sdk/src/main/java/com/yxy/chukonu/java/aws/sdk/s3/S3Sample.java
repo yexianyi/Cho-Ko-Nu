@@ -89,11 +89,14 @@ public class S3Sample {
         try {
             credentials = new ProfileCredentialsProvider().getCredentials();
         } catch (Exception e) {
+            /*
             throw new AmazonClientException(
                     "Cannot load the credentials from the credential profiles file. " +
                     "Please make sure that your credentials file is at the correct " +
                     "location (~/.aws/credentials), and is in valid format.",
                     e);
+            */
+            System.out.println("Error While Checking Amazon Client Credentials. Full Message: " + e.getMessage());
         }
 
         AmazonS3 s3 = new AmazonS3Client(credentials);
