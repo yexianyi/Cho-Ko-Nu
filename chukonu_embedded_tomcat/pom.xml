@@ -7,7 +7,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.source.level>1.8</java.source.level>
 		<java.target.level>1.8</java.target.level>
-		<tomcat.version>8.5.23</tomcat.version>
+		<tomcat.version>8.5.61</tomcat.version>
 	</properties>
 
 	<parent>
